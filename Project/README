@@ -1,0 +1,39 @@
+Contents of folder:
+-> AWS Logs - 5 workers and 10 workers - respective syslog files (Labeled & Unlabeled are in the same job)
+-> Source Code - src files, Makefile and pom.xml
+-> ProjectReport.pdf
+-> JoshiSurana.csv - output file obtained from AWS Run
+
+To run the Program:
+1. Go to the Program
+
+2. Change the value of variables to run spark locally, in standalone mode:
+	spark.root : Path to the folder where spark is located
+	local.input : Path to the folder that has the input files (dataset)
+	local.output: Path to the folder where the output is to be stored
+	local.code: Path to the folder where the records to be predicted is to be stored
+
+3. To run the program on spark locally in standalone mode, run command:
+	make alone jobname=<Classpath>
+	Eg:
+	make alone jobname=MRProject.App
+
+4. Change the value of variables to deploy on AWS:
+	aws.region 	: Region where your emr is to be deployed
+	aws.bucket.name	: Name of the bucket in S3, where all files will be stored
+	aws.subnet.id	: Subnet ID for your AWS account
+	aws.input	: Name of the folder in the bucket where the input files will be stored
+	aws.output	: Name of the folder in the bucket where the output will be saved
+	aws.code: Name to the folder in the bucket where the records to be predicted is to be stored (unlabeled.csv.bz2)
+	aws.log.dir	: Name of the folder in the bucket where the logs will be written
+	aws.num.nodes	: Number of worker nodes to be deployed
+
+5. To run the program on AWS, run command:
+	make cloud jobname=<Classpath>
+    Eg:
+    make cloud jobname=MRProject.App
+
+Files that are used in this (located in Source Code):
+1. MRProject/App.scala
+2. MakeFile
+3. pom.xml

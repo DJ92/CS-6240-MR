@@ -1,0 +1,61 @@
+2017-02-24T00:48:59.270Z INFO Ensure step 2 jar file s3://cs6240dj/homework3-1.0-SNAPSHOT.jar
+2017-02-24T00:49:01.470Z INFO StepRunner: Created Runner for step 2
+INFO startExec 'hadoop jar /mnt/var/lib/hadoop/steps/s-35B87LXQKPQJF/homework3-1.0-SNAPSHOT.jar MainAggregateJobClass s3://cs6240dj/input s3://cs6240dj/output'
+INFO Environment:
+  PATH=/sbin:/usr/sbin:/bin:/usr/bin:/usr/local/sbin:/opt/aws/bin
+  LESS_TERMCAP_md=[01;38;5;208m
+  LESS_TERMCAP_me=[0m
+  HISTCONTROL=ignoredups
+  LESS_TERMCAP_mb=[01;31m
+  AWS_AUTO_SCALING_HOME=/opt/aws/apitools/as
+  UPSTART_JOB=rc
+  LESS_TERMCAP_se=[0m
+  HISTSIZE=1000
+  HADOOP_ROOT_LOGGER=INFO,DRFA
+  JAVA_HOME=/etc/alternatives/jre
+  AWS_DEFAULT_REGION=us-west-2
+  AWS_ELB_HOME=/opt/aws/apitools/elb
+  LESS_TERMCAP_us=[04;38;5;111m
+  EC2_HOME=/opt/aws/apitools/ec2
+  TERM=linux
+  XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt
+  runlevel=3
+  LANG=en_US.UTF-8
+  AWS_CLOUDWATCH_HOME=/opt/aws/apitools/mon
+  MAIL=/var/spool/mail/hadoop
+  LESS_TERMCAP_ue=[0m
+  LOGNAME=hadoop
+  PWD=/
+  LANGSH_SOURCED=1
+  HADOOP_CLIENT_OPTS=-Djava.io.tmpdir=/mnt/var/lib/hadoop/steps/s-35B87LXQKPQJF/tmp
+  _=/etc/alternatives/jre/bin/java
+  CONSOLETYPE=serial
+  RUNLEVEL=3
+  LESSOPEN=||/usr/bin/lesspipe.sh %s
+  previous=N
+  UPSTART_EVENTS=runlevel
+  AWS_PATH=/opt/aws
+  USER=hadoop
+  UPSTART_INSTANCE=
+  PREVLEVEL=N
+  HADOOP_LOGFILE=syslog
+  HOSTNAME=ip-172-31-28-126
+  NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat
+  HADOOP_LOG_DIR=/mnt/var/log/hadoop/steps/s-35B87LXQKPQJF
+  EC2_AMITOOL_HOME=/opt/aws/amitools/ec2
+  SHLVL=5
+  HOME=/home/hadoop
+  HADOOP_IDENT_STRING=hadoop
+INFO redirectOutput to /mnt/var/log/hadoop/steps/s-35B87LXQKPQJF/stdout
+INFO redirectError to /mnt/var/log/hadoop/steps/s-35B87LXQKPQJF/stderr
+INFO Working dir /mnt/var/lib/hadoop/steps/s-35B87LXQKPQJF
+INFO ProcessRunner started child process 7662 :
+hadoop    7662  3300  0 00:49 ?        00:00:00 bash /usr/lib/hadoop/bin/hadoop jar /mnt/var/lib/hadoop/steps/s-35B87LXQKPQJF/homework3-1.0-SNAPSHOT.jar MainAggregateJobClass s3://cs6240dj/input s3://cs6240dj/output
+2017-02-24T00:49:01.522Z INFO HadoopJarStepRunner.Runner: startRun() called for s-35B87LXQKPQJF Child Pid: 7662
+INFO Synchronously wait child process to complete : hadoop jar /mnt/var/lib/hadoop/steps/s-35B87LXQ...
+INFO Process still running
+INFO Process still running
+INFO waitProcessCompletion ended with exit code 0 : hadoop jar /mnt/var/lib/hadoop/steps/s-35B87LXQ...
+INFO total process run time: 2372 seconds
+2017-02-24T01:28:33.874Z INFO Step created jobs: job_1487897208000_0001,job_1487897208000_0002,job_1487897208000_0003,job_1487897208000_0004,job_1487897208000_0005,job_1487897208000_0006,job_1487897208000_0007,job_1487897208000_0008,job_1487897208000_0009,job_1487897208000_0010,job_1487897208000_0011,job_1487897208000_0012,job_1487897208000_0013
+2017-02-24T01:28:33.874Z INFO Step succeeded with exitCode 0 and took 2372 seconds
